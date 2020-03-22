@@ -1,3 +1,4 @@
+/* eslint-disable */
 // var fs = require('fs')
 // var request = require('request')
 
@@ -31,12 +32,12 @@ const ninaUrl = buildUrl(
   'Nina?fields%5B%5D=Name&fields%5B%5D=Headshot&fields%5B%5D=BioP1&fields%5B%5D=BioP2&fields%5B%5D=Motto'
 )
 
-const yarnResponse = await fetch(yarnUrl, { headers })
-const ninaResponse = await fetch(ninaUrl, { headers })
+// const yarnResponse = await fetch(yarnUrl, { headers })
+// const ninaResponse = await fetch(ninaUrl, { headers })
 
-const yarnJson = await yarnResponse.json()
+// const yarnJson = await yarnResponse.json()
 
-console.log('weee')
+// console.log('weee')
 
 // download(yarnJson.records[0].fields.Attachment[0].url, yarnJson.records[0].fields.Name + '.png', function(){
 //   console.log('done');

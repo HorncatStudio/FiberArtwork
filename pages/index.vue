@@ -3,19 +3,27 @@
     class="min-h-screen flex justify-center items-center text-center mx-auto"
   >
     <div>
-      <h1>
-        FiberArtwork
-      </h1>
+      <MainHeader />
+      <NinaSection
+        :motto="nina[0].fields.Motto"
+        :biography-part1="nina[0].fields.BioP1"
+        :biography-part2="nina[0].fields.BioP1"
+        :headshot-url="nina[0].fields.Headshot[0].url"
+      />
       <YarnSection :yarns="yarns" />
     </div>
   </div>
 </template>
 
 <script>
+import MainHeader from '~/components/MainHeader.vue'
+import NinaSection from '~/components/NinaSection.vue'
 import YarnSection from '~/components/YarnSection.vue'
 
 export default {
   components: {
+    MainHeader,
+    NinaSection,
     YarnSection
   },
   async asyncData({ params }) {
