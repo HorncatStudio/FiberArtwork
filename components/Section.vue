@@ -1,5 +1,9 @@
 <template>
-  <div :class="bgcolor" class="mx-auto px-8 lg:px-24 pt-8 pb-8">
+  <div
+    v-if="title != ''"
+    :class="bgcolor"
+    class="mx-auto px-8 lg:px-24 pt-8 pb-8"
+  >
     <div :class="titleColor" class="text-6xl text-center py-2 leading-none">
       {{ title }}
     </div>
@@ -23,7 +27,7 @@ export default {
     },
     title: {
       type: String,
-      required: true
+      default: 'true'
     },
     subtitle: {
       type: String,

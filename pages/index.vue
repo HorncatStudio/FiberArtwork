@@ -4,6 +4,8 @@
   >
     <div>
       <MainHeader />
+      <MissionSection />
+      <InstagramSection />
       <NinaSection
         :motto="nina[0].fields.Motto"
         :biography-part1="nina[0].fields.BioP1"
@@ -16,13 +18,17 @@
 </template>
 
 <script>
+import InstagramSection from '~/components/InstagramSection.vue'
 import MainHeader from '~/components/MainHeader.vue'
+import MissionSection from '~/components/MissionSection.vue'
 import NinaSection from '~/components/NinaSection.vue'
 import YarnSection from '~/components/YarnSection.vue'
 
 export default {
   components: {
+    InstagramSection,
     MainHeader,
+    MissionSection,
     NinaSection,
     YarnSection
   },
