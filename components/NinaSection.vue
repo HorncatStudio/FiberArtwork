@@ -13,13 +13,24 @@
         ></iframe>
       </div>
       <div class="md:1-1/2 md:ml-6 md:max-w-xl">
-        <img :src="headshotUrl" alt="Anastasia's Antonison Picture" />
+        <img
+          :src="headshotUrl"
+          class="img-center"
+          alt="Anastasia's Antonison Picture"
+        />
         {{ biographyPart1 }}
         {{ biographyPart2 }}
       </div>
     </div>
   </Section>
 </template>
+
+<style scoped>
+.img-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 
 <script>
 import Section from '~/components/Section.vue'
